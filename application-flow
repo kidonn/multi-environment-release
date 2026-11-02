@@ -1,0 +1,11 @@
+springboot-cicd-demo/
+├── pom.xml
+├── src/
+│   ├── main/
+│   │   └── java/com/example/demo/
+│   │       └── DemoApplication.java
+│   │       └── HelloController.java
+│   └── test/
+│       └── java/com/example/demo/
+│           └── HelloControllerTest.java
+└── Dockerfile
