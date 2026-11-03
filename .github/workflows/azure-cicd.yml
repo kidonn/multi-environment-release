@@ -40,7 +40,9 @@ jobs:
            ls -lrt
           
       - name: Build and test
-        run: mvn clean verify
+        run:  |
+         cd  springboot-cicd-demo
+         mvn clean verify
 
       - name: Azure login using OIDC
         uses: azure/login@v2
