@@ -35,8 +35,10 @@ jobs:
           cache: maven
 
       - name: check directory contents
-        run: pwd;ls -lrt
-
+        run: |
+           pwd
+          ls -lrt
+          
       - name: Build and test
         run: mvn clean verify
 
