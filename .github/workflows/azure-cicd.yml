@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
 
 env:
-  ACR_NAME: myacrregistry
-  ACR_LOGIN_SERVER: myacrregistry.azurecr.io
+  ACR_NAME: Demo01acr
+  ACR_LOGIN_SERVER: demo01acr-ayeyeff7arfrataj.azurecr.io
   IMAGE_NAME: springboot-app
   AKS_NAME: aks-prod
   RESOURCE_GROUP: rg-prod
@@ -17,7 +17,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on:  Ubuntu 26
+    runs-on:  ubuntu-22.04
 
     permissions:
       contents: read
